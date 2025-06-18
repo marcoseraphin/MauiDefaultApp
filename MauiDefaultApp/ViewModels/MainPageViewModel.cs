@@ -18,10 +18,14 @@ public partial class MainPageViewModel(ILocalizationResourceManager localization
     private string _counterText = "Click me";
 
     [RelayCommand]
-    private async Task OnCounterClicked()
+    private async Task CounterClicked()
     {
         Count++;
         CounterText = Count == 1 ? $"Clicked {Count} time" : $"Clicked {Count} times";
-        await userDialogs.AlertAsync(CounterText);
+
+        if (Count == 5)
+        {
+            await userDialogs.AlertAsync(CounterText);
+        }
     }
 }

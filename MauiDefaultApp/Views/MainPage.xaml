@@ -36,7 +36,7 @@
                 x:Name="CounterBtn"
                 Text="{Binding CounterText}" 
                 SemanticProperties.Hint="Counts the number of times you click"
-                Command="{Binding OnCounterClicked}"
+                Command="{Binding CounterClickedCommand}"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
