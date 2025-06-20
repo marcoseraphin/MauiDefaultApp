@@ -23,8 +23,6 @@ public static class MauiProgram
             {
                 settings.RestoreLatestCulture(false);
                 settings.AddResource(Resources.Resources.ResourceManager);
-                CultureInfo.CurrentCulture = new CultureInfo("en");
-                CultureInfo.CurrentUICulture = new CultureInfo("en");
             })
             .RegisterServices()
             .RegisterPages()    

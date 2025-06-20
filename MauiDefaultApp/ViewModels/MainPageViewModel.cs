@@ -1,3 +1,4 @@
+using System.Globalization;
 using Acr.UserDialogs;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -9,7 +10,7 @@ namespace MauiDefaultApp.ViewModels;
 public partial class MainPageViewModel(ILocalizationResourceManager localizationResourceManager, IUserDialogs userDialogs) : BaseViewModel
 {
     [ObservableProperty]
-    private string _title = localizationResourceManager.GetValue("APP_NAME");
+    private string _title = localizationResourceManager.GetValue(nameof(Resources.Resources.APP_NAME));
 
     [ObservableProperty]
     private int _count;
@@ -25,6 +26,7 @@ public partial class MainPageViewModel(ILocalizationResourceManager localization
 
         if (Count == 5)
         {
+            CultureInfo.CreateSpecificCulture("en");
             await userDialogs.AlertAsync(CounterText);
         }
     }
