@@ -74,5 +74,53 @@ namespace MauiDefaultApp.Resources {
                 return ResourceManager.GetString("BTN_OK", resourceCulture);
             }
         }
+        
+        internal static string LOCATION_PERMISSION_HEADER {
+            get {
+                return ResourceManager.GetString("LOCATION_PERMISSION_HEADER", resourceCulture);
+            }
+        }
+        
+        internal static string NOTIFICATION_PERMISSION_HEADER {
+            get {
+                return ResourceManager.GetString("NOTIFICATION_PERMISSION_HEADER", resourceCulture);
+            }
+        }
+        
+        internal static string CAMERA_PERMISSION_HEADER {
+            get {
+                return ResourceManager.GetString("CAMERA_PERMISSION_HEADER", resourceCulture);
+            }
+        }
+        
+        internal static string CALENDAR_PERMISSION_HEADER {
+            get {
+                return ResourceManager.GetString("CALENDAR_PERMISSION_HEADER", resourceCulture);
+            }
+        }
+        
+        internal static string LOCATION_PERMISSION_MESSAGE_RATIONALE {
+            get {
+                return ResourceManager.GetString("LOCATION_PERMISSION_MESSAGE_RATIONALE", resourceCulture);
+            }
+        }
+        
+        internal static string NOTIFICATION_PERMISSION_MESSAGE_RATIONALE {
+            get {
+                return ResourceManager.GetString("NOTIFICATION_PERMISSION_MESSAGE_RATIONALE", resourceCulture);
+            }
+        }
+        
+        internal static string CAMERA_PERMISSION_MESSAGE_RATIONALE {
+            get {
+                return ResourceManager.GetString("CAMERA_PERMISSION_MESSAGE_RATIONALE", resourceCulture);
+            }
+        }
+        
+        internal static string CALENDAR_PERMISSION_MESSAGE_RATIONALE {
+            get {
+                return ResourceManager.GetString("CALENDAR_PERMISSION_MESSAGE_RATIONALE", resourceCulture);
+            }
+        }
     }
 }

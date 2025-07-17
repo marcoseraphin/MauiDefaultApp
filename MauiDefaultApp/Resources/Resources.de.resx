@@ -33,4 +33,28 @@
   <data name="BTN_OK" xml:space="preserve">
     <value>OK</value>
   </data>
+   <data name="LOCATION_PERMISSION_HEADER" xml:space="preserve">
+    <value>Standort erforderlich</value>
+  </data>
+  <data name="NOTIFICATION_PERMISSION_HEADER" xml:space="preserve">
+    <value>Benachrichtigung erforderlich</value>
+  </data>
+  <data name="CAMERA_PERMISSION_HEADER" xml:space="preserve">
+    <value>Kamera erforderlich</value>
+  </data>
+  <data name="CALENDAR_PERMISSION_HEADER" xml:space="preserve">
+    <value>Kalender erforderlich</value>
+  </data>
+  <data name="LOCATION_PERMISSION_MESSAGE_RATIONALE" xml:space="preserve">
+    <value>Wir verwenden Standortinformationen. Bitte aktivieren Sie die Standortberechtigung in den Einstellungen.</value>
+  </data>
+  <data name="NOTIFICATION_PERMISSION_MESSAGE_RATIONALE" xml:space="preserve">
+    <value>Wir verwenden Benachrichtigungen, um Benutzer zu benachrichtigen. Bitte aktivieren Sie die Benachrichtigungsberechtigung in den Einstellungen.</value>
+  </data>
+  <data name="CAMERA_PERMISSION_MESSAGE_RATIONALE" xml:space="preserve">
+    <value>Wir verwenden eine Kamera, um Barcodes zu scannen und ein Foto aufzunehmen. Bitte aktivieren Sie die Kameraberechtigung in den Einstellungen.</value>
+  </data>
+  <data name="CALENDAR_PERMISSION_MESSAGE_RATIONALE" xml:space="preserve">
+    <value>Wir verwenden den Kalender, um Ereignisse hinzuzufügen. Bitte aktivieren Sie die Kalenderberechtigung in den Einstellungen.</value>
+  </data>
 </root>
