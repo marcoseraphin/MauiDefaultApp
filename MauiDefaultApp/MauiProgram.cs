@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using LocalizationResourceManager.Maui;
 using Acr.UserDialogs;
 using System.Globalization;
+using epj.RouteGenerator;
 
 #if DEBUG
 using DotNet.Meteor.HotReload.Plugin;
@@ -10,6 +11,7 @@ using DotNet.Meteor.HotReload.Plugin;
 
 namespace MauiDefaultApp;
 
+[AutoRoutes("Page")]
 public static class MauiProgram
 {
     public static MauiApp CreateMauiApp()

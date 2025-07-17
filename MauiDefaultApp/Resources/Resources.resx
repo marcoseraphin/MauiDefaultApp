@@ -21,4 +21,16 @@
     <data name="APP_NAME" xml:space="preserve">
     <value>Shell Sample App</value>
   </data>
+  <data name="LANGUAGE_BUTTON" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="MSG_PERSONAL_INFO_UPDATE_ERROR" xml:space="preserve">
+    <value>An error occurred while updating personal information: {0}</value>
+  </data>
+  <data name="MSG_ERROR_TITLE" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="BTN_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
 </root>

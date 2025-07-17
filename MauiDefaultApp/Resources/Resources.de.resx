@@ -21,4 +21,16 @@
     <data name="APP_NAME" xml:space="preserve">
     <value>Shell Beispiel App</value>
   </data>
+  <data name="LANGUAGE_BUTTON" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="MSG_PERSONAL_INFO_UPDATE_ERROR" xml:space="preserve">
+    <value>Beim Aktualisieren der persönlichen Informationen ist ein Fehler aufgetreten: {0}</value>
+  </data>
+  <data name="MSG_ERROR_TITLE" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="BTN_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
 </root>

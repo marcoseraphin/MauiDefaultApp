@@ -50,5 +50,29 @@ namespace MauiDefaultApp.Resources {
                 return ResourceManager.GetString("APP_NAME", resourceCulture);
             }
         }
+        
+        internal static string LANGUAGE_BUTTON {
+            get {
+                return ResourceManager.GetString("LANGUAGE_BUTTON", resourceCulture);
+            }
+        }
+        
+        internal static string MSG_PERSONAL_INFO_UPDATE_ERROR {
+            get {
+                return ResourceManager.GetString("MSG_PERSONAL_INFO_UPDATE_ERROR", resourceCulture);
+            }
+        }
+        
+        internal static string MSG_ERROR_TITLE {
+            get {
+                return ResourceManager.GetString("MSG_ERROR_TITLE", resourceCulture);
+            }
+        }
+        
+        internal static string BTN_OK {
+            get {
+                return ResourceManager.GetString("BTN_OK", resourceCulture);
+            }
+        }
     }
 }

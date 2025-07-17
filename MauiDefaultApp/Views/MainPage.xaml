@@ -38,6 +38,20 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Command="{Binding CounterClickedCommand}"
                 HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="LanguageBtn"
+                Text="{Binding LanguageButtonText}" 
+                SemanticProperties.Hint="Switch between German and English"
+                Command="{Binding SwitchLanguageCommand}"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="SettingsBtn"
+                Text="Settings" 
+                SemanticProperties.Hint="Navigate to settings page"
+                Command="{Binding NavigateToSettingsCommand}"
+                HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
 

@@ -27,6 +27,8 @@ public static class Registration
   
         builder.Services.AddSingleton<IDialogService, DialogService>();
         builder.Services.AddSingleton<IDiagnosticService, DiagnosticService>();
+        builder.Services.AddSingleton<ILanguageService, LanguageService>();
+        builder.Services.AddSingleton<INavigationService, NavigationService>();
         
         //builder.Services.AddSingleton<IFeatureService>(FeatureService.Instance);
 
@@ -55,6 +57,7 @@ public static class Registration
     public static MauiAppBuilder RegisterPages(this MauiAppBuilder builder)
     {
         builder.Services.AddTransientWithShellRoute<MainPage, MainPageViewModel>();
+        builder.Services.AddTransientWithShellRoute<SettingsPage, SettingsPageViewModel>();
         return builder;
     }
 
