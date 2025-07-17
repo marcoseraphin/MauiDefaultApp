@@ -29,6 +29,8 @@ public static class Registration
         builder.Services.AddSingleton<IDiagnosticService, DiagnosticService>();
         builder.Services.AddSingleton<ILanguageService, LanguageService>();
         builder.Services.AddSingleton<INavigationService, NavigationService>();
+        builder.Services.AddSingleton<ICacheService, CacheService>();
+        builder.Services.AddSingleton<IPermissionManager, PermissionsManager>();
         
         //builder.Services.AddSingleton<IFeatureService>(FeatureService.Instance);
 

@@ -33,6 +33,12 @@
   <data name="BTN_OK" xml:space="preserve">
     <value>OK</value>
   </data>
+    <data name="BTN_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="SETTINGS_PAGE_TITLE" xml:space="preserve">
+    <value>Settings</value>
+  </data>
   <data name="LOCATION_PERMISSION_HEADER" xml:space="preserve">
     <value>Location Required</value>
   </data>

@@ -75,6 +75,18 @@ namespace MauiDefaultApp.Resources {
             }
         }
         
+        internal static string BTN_CANCEL {
+            get {
+                return ResourceManager.GetString("BTN_CANCEL", resourceCulture);
+            }
+        }
+        
+        internal static string SETTINGS_PAGE_TITLE {
+            get {
+                return ResourceManager.GetString("SETTINGS_PAGE_TITLE", resourceCulture);
+            }
+        }
+        
         internal static string LOCATION_PERMISSION_HEADER {
             get {
                 return ResourceManager.GetString("LOCATION_PERMISSION_HEADER", resourceCulture);
