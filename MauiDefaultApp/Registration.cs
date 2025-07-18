@@ -69,7 +69,7 @@ public static class Registration
 //         builder.UseSentry(options =>
 //         {
 //             // The DSN is the only required setting.
-//             options.Dsn = "https://414f8e65f750cb54623176831f4a9aee@o4506020215586816.ingest.sentry.io/4506020217815040";
+//             options.Dsn = "https://xxxxxx.ingest.sentry.io/4506020217815040";
 
 //             // Use debug mode if you want to see what the SDK is doing.
 //             // Debug messages are written to stdout with Console.Writeline,
