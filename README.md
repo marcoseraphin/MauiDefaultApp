@@ -5,4 +5,4 @@ A MAUI Default App with
 - RouteGenerator
 - Mulitlanguage support
 - Caching
-- many other Services like Permission Service, NAvugation Service, Dialog Service, Diagnostic Service
+- many other Services like Permission Service, Navigation Service, Dialog Service, Diagnostic Service
