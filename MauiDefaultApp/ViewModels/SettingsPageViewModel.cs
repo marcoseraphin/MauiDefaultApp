@@ -37,28 +37,10 @@ public partial class SettingsPageViewModel : BaseViewModel
         _navigationService = navigationService;
     }
 
-    partial void OnSelectedLanguageChanged(AppLanguage value)
-    {
-        _ = SetLanguageAsync(value);
-    }
-
     [RelayCommand]
     private async Task GoBack()
     {
         await _navigationService.GoBackAsync();
     }
 
-    private async Task SetLanguageAsync(AppLanguage language)
-    {
-        try
-        {
-            _languageService.SetUserInterfaceLanguage(language);
-            WeakReferenceMessenger.Default.Send(new AppLanguageSelectedMessage(language));
-        }
-        catch (Exception ex)
-        {
-            await _dialogService.AlertAsync($"An error occurred while changing language: {ex.Message}", "Error", "OK");
-            _diagnosticService.WriteException(ex);
-        }
-    }
 } 
