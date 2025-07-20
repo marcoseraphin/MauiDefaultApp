@@ -7,35 +7,16 @@ using MauiDefaultApp.Models;
 
 namespace MauiDefaultApp.ViewModels;
 
-public partial class SettingsPageViewModel : BaseViewModel
+public partial class SettingsPageViewModel(
+    ILanguageService languageService,
+    IDialogService dialogService,
+    IDiagnosticService diagnosticService,
+    INavigationService navigationService) : BaseViewModel
 {
-    private readonly ILanguageService _languageService;
-    private readonly IDialogService _dialogService;
-    private readonly IDiagnosticService _diagnosticService;
-    private readonly INavigationService _navigationService;
-
-    [ObservableProperty]
-    private AppLanguage _selectedLanguage = AppLanguage.German;
-
-    [ObservableProperty]
-    private List<AppLanguage> _availableLanguages = new()
-    {
-        AppLanguage.Automatic,
-        AppLanguage.German,
-        AppLanguage.English
-    };
-
-    public SettingsPageViewModel(
-        ILanguageService languageService,
-        IDialogService dialogService,
-        IDiagnosticService diagnosticService,
-        INavigationService navigationService)
-    {
-        _languageService = languageService;
-        _dialogService = dialogService;
-        _diagnosticService = diagnosticService;
-        _navigationService = navigationService;
-    }
+    private readonly ILanguageService _languageService = languageService;
+    private readonly IDialogService _dialogService = dialogService;
+    private readonly IDiagnosticService _diagnosticService = diagnosticService;
+    private readonly INavigationService _navigationService = navigationService;
 
     [RelayCommand]
     private async Task GoBack()
