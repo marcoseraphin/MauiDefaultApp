@@ -32,6 +32,7 @@ public static class Registration
         builder.Services.AddSingleton<ICacheService, CacheService>();
         builder.Services.AddSingleton<IPermissionManager, PermissionsManager>();
         builder.Services.AddSingleton<ISettingsService, SettingsService>();
+        builder.Services.AddSingleton<IThemeService, ThemeService>();
         
         //builder.Services.AddSingleton<IFeatureService>(FeatureService.Instance);
 
