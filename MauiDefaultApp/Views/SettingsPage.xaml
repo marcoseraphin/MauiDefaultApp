@@ -1,41 +1,63 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewmodels="clr-namespace:MauiDefaultApp.ViewModels"
-             x:Class="MauiDefaultApp.Views.SettingsPage"
-             x:DataType="viewmodels:SettingsPageViewModel"
-             Title="Settings">
+<ContentPage
+    x:Class="MauiDefaultApp.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:resources="clr-namespace:MauiDefaultApp.Resources"
+    xmlns:viewmodels="clr-namespace:MauiDefaultApp.ViewModels"
+    Title="Settings"
+    x:DataType="viewmodels:SettingsPageViewModel">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            
-            <Label
-                Text="Settings"
-                Margin="0,20,0,20"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+        <VerticalStackLayout Padding="30,0" Spacing="25">
 
             <Label
-                Text="Configure your app preferences"
+                Margin="0,20,0,20"
+                SemanticProperties.HeadingLevel="Level1"
+                Style="{StaticResource Headline}"
+                Text="Settings" />
+
+            <Label
+                SemanticProperties.HeadingLevel="Level2"
                 Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2" />
+                Text="Configure your app preferences" />
+
+            <Label Style="{StaticResource LabelStyle}" Text="{Binding NameLabelText}" />
+            <Entry Placeholder="{Binding NameEntryPlaceholderText}" Text="{Binding Name, Mode=TwoWay}" />
+
+            <Label Style="{StaticResource LabelStyle}" Text="{x:Static resources:Resources.LANGUAGE_PICKER_TITLE}" />
+            <Picker
+                ItemDisplayBinding="{Binding DisplayName}"
+                ItemsSource="{Binding Languages}"
+                SelectedItem="{Binding SelectedLanguage}" />
+
+            <Label Style="{StaticResource LabelStyle}" Text="{x:Static resources:Resources.THEME_LABEL_TEXT}" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="20">
+                <Button
+                    Command="{Binding SetLightThemeCommand}"
+                    Style="{StaticResource ButtonStyle}"
+                    Text="{x:Static resources:Resources.LIGHT_THEME_BUTTON_TEXT}" />
+                <Button
+                    Grid.Column="1"
+                    Command="{Binding SetDarkThemeCommand}"
+                    Style="{StaticResource ButtonStyle}"
+                    Text="{x:Static resources:Resources.DARK_THEME_BUTTON_TEXT}" />
+            </Grid>
 
             <Button
                 x:Name="SaveSettingsBtn"
-                Text="Save Settings"
-                SemanticProperties.Hint="Save the settings"
                 Command="{Binding SaveSettingsCommand}"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill"
+                SemanticProperties.Hint="Save the settings"
+                Text="{x:Static resources:Resources.SAVE_BUTTON_TEXT}" />
 
-            <!-- Back Button -->
+            <!--  Back Button  -->
             <Button
                 x:Name="BackBtn"
-                Text="Back to Main"
-                SemanticProperties.Hint="Navigate back to the main page"
                 Command="{Binding GoBackCommand}"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill"
+                SemanticProperties.Hint="Navigate back to the main page"
+                Text="{x:Static resources:Resources.BACK_BUTTON_TEXT}" />
 
         </VerticalStackLayout>
     </ScrollView>

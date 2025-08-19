@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Logging;
 using LocalizationResourceManager.Maui;
 using Acr.UserDialogs;
-using System.Globalization;
 using epj.RouteGenerator;
 
 #if DEBUG
