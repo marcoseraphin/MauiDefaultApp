@@ -62,6 +62,8 @@
     <ItemGroup>
         <PackageReference Include="DotNetMeteor.HotReload.Plugin" Version="3.3.0" Condition="'$(Configuration)' == 'Debug'" />
         <PackageReference Include="Microsoft.Maui.Controls" Version="10.0.50" />
+        <PackageReference Include="epj.Expander.Maui" Version="1.0.4" />
+        <PackageReference Include="epj.RouteGenerator" Version="1.0.5" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.5"/>
         <PackageReference Include="LocalizationResourceManager.Maui" Version="1.2.2" />
         <PackageReference Include="MonkeyCache" Version="2.1.1" />
