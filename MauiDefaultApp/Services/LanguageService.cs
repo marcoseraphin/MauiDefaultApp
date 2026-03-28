@@ -17,4 +17,10 @@ public class LanguageService(ILocalizationResourceManager localizationManager) :
             _ => _localizationManager.DefaultCulture
         };
     }
+
+    public List<LanguageModel> GetAvailableLanguages() => [
+            new() { Id = (int)AppLanguage.Automatic, DisplayName = _localizationManager["LANGUAGE_AUTOMATIC"] },
+            new() { Id = (int)AppLanguage.German, DisplayName = _localizationManager["LANGUAGE_GERMAN"] },
+            new() { Id = (int)AppLanguage.English, DisplayName = _localizationManager["LANGUAGE_ENGLISH"] }
+        ];
 }
