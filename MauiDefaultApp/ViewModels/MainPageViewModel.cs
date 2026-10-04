@@ -26,7 +26,7 @@ public partial class MainPageViewModel(
     private readonly INavigationService navigationService = navigationService;
 
     [ObservableProperty]
-    private string _title = localizationResourceManager.GetValue(nameof(Resources.Resources.APP_NAME));
+    private string _title = "Test";
 
     [ObservableProperty]
     private int _count;
@@ -49,7 +49,6 @@ public partial class MainPageViewModel(
             await SetLanguageAsync(AppLanguage.German);
 
         LanguageButtonText = localizationResourceManager.GetValue(nameof(Resources.Resources.LANGUAGE_BUTTON));
-        Title = localizationResourceManager.GetValue(nameof(Resources.Resources.APP_NAME));
     }
 
     [RelayCommand]
